@@ -17,7 +17,7 @@ function routeConfig($urlRouterProvider, $stateProvider, resolverProvider) {
             asyncPreloading: resolverProvider.asyncPagePrealoading
           }
         })
-        //temporary version.Routs'll be removed to to their pages
+        //temporary version.Routs'll be moved to to their pages
         .state({
               name: 'converter',
               url: '/converter',

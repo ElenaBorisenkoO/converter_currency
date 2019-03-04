@@ -1,4 +1,4 @@
-exports.config = {
+export const config = {
     framework: 'jasmine',
     baseUrl: 'http://localhost:8081',
     suites: {
@@ -13,7 +13,7 @@ exports.config = {
     onPrepare: function onPrepare() {
       require('babel-core/register');
 
-      var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
+      let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
       jasmine.getEnv().addReporter(new SpecReporter({
         displayStacktrace: 'none',
         prefixes: {
