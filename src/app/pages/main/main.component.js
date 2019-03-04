@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 import MainController from './main.controller';
 import mainTpl from './main.html';
@@ -6,6 +6,7 @@ import mainTpl from './main.html';
 export default class MainComponent {
     constructor() {
         this.controller = MainController;
+        this.controllerAs = 'ctr';
         this.templateUrl = mainTpl;
     }
 }
