@@ -15,7 +15,7 @@ export default function (app) {
             getRates: () => {
               $http.get(API)
                 .then(({ data }) => {
-                  data.forEach(item => this.list.push(item));
+                  angular.copy([...data], this.list);
                 });
   
               return this.list;
