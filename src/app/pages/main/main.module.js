@@ -5,15 +5,13 @@ import MainComponent from './main.component';
 const mainPageModule = angular.module('main-module', [
     'ui.router'
 ])
-    .config(($stateProvider, $urlRouterProvider, rateServiceProvider) => {
+    .config(($stateProvider, $urlRouterProvider) => {
         'ngInject';
-        rateServiceProvider.setAPI('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5');
-
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
             .state('main', {
-                url: '/',
+                url: '/main',
                 component: 'main'
             })
     })

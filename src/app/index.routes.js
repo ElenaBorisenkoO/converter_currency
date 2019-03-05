@@ -18,11 +18,6 @@ function routeConfig($urlRouterProvider, $stateProvider, resolverProvider) {
           }
         })
         //temporary version.Routs'll be moved to to their pages
-        .state({
-              name: 'converter',
-              url: '/converter',
-              component: 'main'
-              })
           .state({
               name: 'autorization',
               url: '/autorizationt',

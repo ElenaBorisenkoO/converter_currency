@@ -6,7 +6,6 @@ import mainTpl from './main.html';
 export default class MainComponent {
     constructor() {
         this.controller = MainController;
-        this.controllerAs = 'ctr';
         this.templateUrl = mainTpl;
     }
 }
